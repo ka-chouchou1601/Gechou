@@ -14,14 +14,11 @@ const productSchema=new mongoose.Schema({
         required: true
 
     },
-    countInStock: {
+    weight: {
         type: String,
         required: true
     },
-    imageUrl:{
-        type: String,
-        required: true
-    }
+   
 
 })
 
