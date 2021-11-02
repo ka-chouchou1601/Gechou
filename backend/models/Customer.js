@@ -1,5 +1,5 @@
 const mongoose= require('mongoose');
-
+const bcrypt = require('bcryptjs');
 
 const customerSchema=new mongoose.Schema({
     name:{
@@ -21,6 +21,12 @@ const customerSchema=new mongoose.Schema({
      
 
     },
+
+    hash_password: {
+        type: String,
+        required: true
+    },
+
     shippingInfo :[{
        
         cost:{
